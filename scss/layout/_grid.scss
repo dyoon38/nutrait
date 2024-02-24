@@ -1,0 +1,152 @@
+.container {width: 100%;margin-right: auto;margin-left: auto;padding:0 20px;}
+
+@media (min-width:576px) {
+
+    .container {max-width: 536px}
+    
+}
+
+@media (min-width:768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px;
+        padding:0 24px;
+    }
+}
+
+@media (min-width:992px) {
+
+    .container{
+        max-width: 952px
+    }
+    .container .title {font-size:3.2rem; margin-bottom: 40px;}
+}
+
+@media (min-width:1200px) {
+
+    .container {
+        max-width: 1160px
+    }
+
+    
+}
+/*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
+@media screen and (max-width: 1200px) {
+    h1 {
+      font-size: 62px;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    h1 {
+      font-size: 42px;
+      margin-bottom: 0;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+  
+    h3 {
+      font-size: 32px;
+    }
+  
+    h4 {
+      font-size: 28px;
+    }
+  
+    h5 {
+      font-size: 24px;
+    }
+  
+    h6 {
+      font-size: 20px;
+    }
+  
+    .lead {
+      font-size: 16px;
+    }
+  
+    .navbar-expand-lg .navbar-nav .nav-link {
+      margin-top: 1rem;
+    }
+  
+  
+    #cart-modal .modal-header .btn-close {
+      margin: 22px 14px;
+    }
+  
+    .custom-btn {
+      font-size: 14px;
+      padding: 13.5px 20px;
+    }
+  
+    .slick-slideshow .custom-btn {
+      padding-right: 27px;
+      padding-left: 27px;
+    }
+  
+    .social-login,
+    .div-separator {
+      width: 75% !important;
+    }
+  
+    #cart-modal .modal-footer .row {
+      width: 100% !important;
+    }
+  
+    .site-header.section-padding,
+    .section-padding {
+      padding-top: 5.6rem;
+      padding-bottom: 6.4rem;
+    }
+  
+    .site-header-image.section-padding {
+      padding-bottom: 0;
+    }
+  
+    .header-info {
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+  
+    .header-image {
+      position: relative;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+    }
+  
+    .slick-testimonial-caption {
+      padding: 6rem 3rem 4rem 3rem;
+    }
+  
+    .slick-slideshow .slick-dots li {
+      width: 25px;
+      height: 25px;
+    }
+  
+  
+    .modal-body {
+      padding: 0 2.4rem;
+    }
+  
+    #cart-modal .modal-footer {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  
+    #cart-modal .modal-body {
+      padding: 4rem 2rem 2rem 2rem;
+    }
+  
+    .full-image-img {
+      bottom: 0;
+    }
+  }
