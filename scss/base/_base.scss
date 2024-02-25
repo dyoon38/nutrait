@@ -24,7 +24,7 @@ body {
     position: relative;
 }
 
-main {min-height: calc(100vh - 260px);}
+main {min-height: calc(100vh - 360px);}
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -148,6 +148,11 @@ a:hover {
   border: 1px solid #959595;
   border-top-color: var(--white-color);
   animation: spinner .9s linear infinite;
+}
+
+.container .title {padding-bottom:16px;font-size:2.4rem;line-height:3.6rem;color:var(--primary-blue); font-weight: var(--font-weight-bold);}
+@media (min-width:992px) {
+  .container .title {font-size:3.2rem; margin-bottom: 40px;}
 }
 
 @keyframes spinner {

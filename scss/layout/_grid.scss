@@ -1,4 +1,5 @@
 .container {width: 100%;margin-right: auto;margin-left: auto;padding:0 20px;}
+.container .title:first-of-type {margin-top:5.6rem}
 
 @media (min-width:576px) {
 
@@ -21,7 +22,6 @@
     .container{
         max-width: 952px
     }
-    .container .title {font-size:3.2rem; margin-bottom: 40px;}
 }
 
 @media (min-width:1200px) {

@@ -155,7 +155,6 @@ strong {
 }
 
 
-.container .title {padding-bottom:16px;font-size:2.4rem;line-height:3.6rem;color:var(--primary-blue); font-weight: var(--font-weight-bold);}
 /*---------------------------------------
   NAVIGATION               
 -----------------------------------------*/
@@ -452,9 +451,7 @@ button:focus:not(:focus-visible) {
 
 
 
-.member .modal-body .member-info{font-size:1.6rem;font-weight: var(--font-weight-normal);color: var(--text-color);}
-.member .modal-body .member-info strong{margin-right:8px;font-size:2.4rem;font-weight: var(--font-weight-bold);color: var(--dark-grey-color);}
-.member .modal-body .member-info .team-position {font-size: 1.4rem;}
+
 .modal-header {
   padding-top: 2.4rem;
 }
@@ -583,37 +580,6 @@ button:focus:not(:focus-visible) {
   font-weight: var(--font-weight-bold);
   border-bottom: 2px solid var(--grey-color);
   padding-bottom: 6px;
-}
-
-/*---------------------------------------
-  CONTACT              
------------------------------------------*/
-.contact-info {
-  padding: 40px;
-}
-
-.contact-form .form-control {
-  border-color: var(--grey-color);
-  font-weight: var(--font-weight-normal);
-}
-
-.form-floating>label {
-  color: var(--grey-color);
-  font-weight: var(--font-weight-normal);
-}
-
-.contact-form button[type='submit'] {
-  background: var(--dark-color);
-  border: none;
-  border-radius: 100px;
-  color: var(--white-color);
-  font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
-  padding: 16px;
-}
-
-.contact-form button[type='submit']:hover {
-  background: var(--primary-green);
 }
 
 

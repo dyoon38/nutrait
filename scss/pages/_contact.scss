@@ -1,0 +1,40 @@
+
+/*---------------------------------------
+  CONTACT              
+-----------------------------------------*/
+
+.contact-info{display:flex; flex-direction:column;font-size:1.4rem;line-height:2rem;color:var(--grey400)}
+.contact-info .list {display:flex; flex-direction:column; margin-top:32px;padding-bottom:8px;}
+.contact-info .list strong{color: var(--primary-blue);padding-bottom: 8px;}
+.contact-info .list:first-child {margin-top:16px;}
+
+
+@media (min-width:992px) {
+  .contact-info .list {flex-direction:row;margin-top:0;}
+  .contact-info{font-size:1.6rem;color:var(--grey400)}
+  .contact-info strong {display:inline-block;padding-right:8px;}
+
+}
+.contact-form .form-control {
+  border-color: var(--grey-color);
+  font-weight: var(--font-weight-normal);
+}
+
+.form-floating>label {
+  color: var(--grey-color);
+  font-weight: var(--font-weight-normal);
+}
+
+.contact-form button[type='submit'] {
+  background: var(--dark-color);
+  border: none;
+  border-radius: 100px;
+  color: var(--white-color);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  padding: 16px;
+}
+
+.contact-form button[type='submit']:hover {
+  background: var(--primary-green);
+}

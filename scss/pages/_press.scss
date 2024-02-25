@@ -13,10 +13,10 @@
             align-items: center;
             font-size: 1.2rem;color: var(--primary-blue);font-weight: var(--font-weight-medium);
 
-            .press-date {padding-left:4px;font-size: 1.1rem;color: var(--primary-grey);font-weight: var(--font-weight-normal);}
+            .press-date {padding-left:4px;font-size: 1.1rem;color: var(--grey500);font-weight: var(--font-weight-normal);}
         }
 
-        .press-title {display:block;font-size: 1.6rem; line-height:2.4rem;font-weight:var(--font-weight-medium);color: var(--dark-color);}
+        .press-title {display:block;font-size: 1.6rem; line-height:2.4rem;font-weight:var(--font-weight-medium);color: var(--grey600);}
         .press-title:hover {text-decoration: underline;}
     }
 }

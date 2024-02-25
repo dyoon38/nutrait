@@ -9,11 +9,11 @@
   HISTORY               
 -----------------------------------------*/
 .history {background-color: rgba(149,184,220,.15);}
-.history .history-year {display: flex; align-items: center;}
-.history .history-year h2{font-size: 3.2rem; font-weight: var(--font-weight-bold); color: var(--primary-grey);}
-.history .history-year .month-list {display:flex; flex-direction:column; gap: 16px;}
-.history .history-year .month-list li {display: flex; align-items:stretch; font-size: 1.6rem; line-height: 2.4rem; color: var(--text-color);}
-.history .history-year .month-list li h4 {margin-right:16px; font-size: 1.6rem; font-weight:var(--font-weight-bold); color: var(--primary-grey);}
+.history .history-year {margin-bottom:24px;display: flex; flex-direction:column;align-items: flex-start;}
+.history .history-year .year{display:block;font-size: 2rem; color: var(--grey600);margin-bottom:16px;}
+.history .history-year .month-list {display:flex; flex-direction:column; gap: 8px;}
+.history .history-year .month-list li {display: flex; align-items:stretch; font-size: 1.6rem; line-height: 2.4rem; color: var(--grey400);}
+.history .history-year .month-list li > p {margin-right:8px; font-size: 1.6rem; font-weight:var(--font-weight-medium);color: var(--grey500);}
 
 
 /*---------------------------------------
@@ -25,22 +25,51 @@
 .team-thumb .team-image {position:relative;max-width: 164px;margin: auto;}
 .team-thumb .team-image img {max-width: 100%; height: auto; border-radius:100%; border:none; }
 .team-thumb .team-image.image-plus::after {position:absolute; content:''; right:0; bottom:0; width:40px; height:40px; background-image:url(/images/assets/plus_40px.png); background-size:contain; background-repeat: no-repeat; background-position: center center;}
-.team-thumb .team-info {margin-top:16px; display: flex; flex-direction: column; color:var(--text-color); align-items: center; font-size:1.6rem;}
-.team-thumb .team-info strong {font-size: 2rem; color: var(--dark-grey-color);}
-.team-thumb .team-info .team-position {margin-top:4px; font-size: 1.4rem; color: var(--primary-grey);text-align: center;word-wrap: break-word;word-break: keep-all;}
+.team-thumb .team-info {margin-top:16px; display: flex; flex-direction: column; color:var(--grey500); align-items: center; font-size:1.6rem;}
+.team-thumb .team-info strong {font-size: 2rem; color: var(--grey700);}
+.team-thumb .team-info .team-position {margin-top:4px; font-size: 1.4rem; color: var(--grey400);text-align: center;word-wrap: break-word;word-break: keep-all;}
 
 
+/*---------------------------------------
+  TEAM MEMBERS MODAL            
+-----------------------------------------*/
+.member.modal .modal-body {display: flex; flex-direction: column;}
+.member .modal-body .member-info{font-size:1.6rem;font-weight: var(--font-weight-normal);color: var(--grey500);}
+.member .modal-body .member-info strong{margin-right:8px;font-size:2.4rem;font-weight: var(--font-weight-bold);color: var(--grey700);}
+.member .modal-body .member-info .team-position {font-size: 1.4rem;color: var(--primary-blue);}
 
+@media (min-width: 992px) {
+.member.modal .modal-body {flex-direction: row;
+  .modal-image{width: 45%;height:100%;margin-right:24px;padding: 0 16px;}
+}
+
+}
+
+.member-history {margin-top:16px;
+
+  ul {margin-left: 8px;}
+  ul li{padding-left:4px;font-size: 1.4rem; line-height: 2rem; color: var(--grey500);}
+  ul li::marker {content:'-';}
+  .title {margin:16px 0;display: inline-block;width: 100%;line-height:2.4rem;font-size: 1.2rem;font-weight:var(--font-weight-medium);color: var(--grey600);text-align: center;background: var(--grey100);border-radius: 1.6rem;}
+}
 
 .team-info {
   width: 100%;
 }
 
-.cho-image {width:100%; height: 260px;background:#dedede}
+.modal-image {width:100%; height: 260px;}
+.modal-image img {width: 100%;height: 100%; object-fit: cover;}
 
 @media (min-width: 576px) {
     .team .team-box{flex-direction: row;justify-content: space-between;}
     .team-thumb{width:50%;}
+
+    .history .history-year {margin-bottom:32px;flex-direction:row;align-items:center;}
+    .history .history-year .year{font-size:2.4rem;margin-bottom:0;margin-right:24px;}
+    .history .history-year .month-list {gap: 16px;}
+    .history .history-year .month-list li {display: flex; align-items:stretch; font-size: 1.6rem; line-height: 2.4rem; color: var(--grey400);}
+    .history .history-year .month-list li > p {margin-right:8px; font-size: 1.6rem; font-weight:var(--font-weight-medium);color: var(--grey500);}
+
 
 }
 
@@ -55,6 +84,8 @@
   .about .about-info h1 {margin-bottom:32px; font-size: 4.8rem; line-height: 5.6rem; }
   .about .about-info .about-copy {font-size: 2rem; line-height: 2.9rem; word-break: keep-all;}
   .team-thumb{width:25%;}
+  // .history .history-year strong.year{font-size: 3.2rem; font-weight: var(--font-weight-bold); color: var(--primary-grey);}
+
 
 }
 
@@ -62,23 +93,4 @@
     .about.site-header{max-width:1160px;}
 }
 
-.member-history {margin-top:16px;
 
-    ul li{font-size: 1.4rem; line-height: 2rem; color: var(--text-color);}
-    .title {display: inline-block;width: 100%;line-height:2.4rem;font-size: 1.2rem;font-weight:var(--font-weight-normal);color: var(--text-color);text-align: center;background: var(--bg-primary-grey);border-radius: 1.6rem;}
-    // ul li::before {content: '';
-    //     display: block;
-    //     position: absolute;
-    //     top: 50%;
-    //     left: 2px;
-    //     width: 4px;
-    //     height: 4px;
-    //     margin-top: -2px;
-    //     background-color: var(--text-color);}
-}
-
-.modal-body {
-    margin-top:1.6rem;
-    margin-bottom:4rem;
-    padding: 0 2rem;
-  }
