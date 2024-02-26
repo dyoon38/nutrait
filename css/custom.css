@@ -464,7 +464,7 @@ button:focus:not(:focus-visible) {
   height:40px;
   padding: 0;
   opacity: 1;
-  background: url(/images/assets/Close_40px.png);
+  background: url(../images/assets/Close_40px.png);
 }
 
 #cart-modal .modal-header .btn-close {
