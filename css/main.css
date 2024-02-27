@@ -10671,6 +10671,20 @@ a:hover {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 991px) {
+  .navbar .navbar-box.show {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .navbar .navbar-box.show .navbar-nav {
+    align-items: center;
+  }
+  .navbar .navbar-box .navbar-nav .nav-item .nav-link {
+    font-size: 3.2rem;
+  }
+}
 /*---------------------------------------
   SITE FOOTER               
 -----------------------------------------*/
@@ -10737,7 +10751,7 @@ a:hover {
   margin: 0 auto;
 }
 
-#myChart-tools {
+#myChart-tools, #myChart-license-text {
   display: none !important;
 }
 
