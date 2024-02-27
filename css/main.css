@@ -10733,6 +10733,14 @@ a:hover {
   height: 80vh;
 }
 
+.chart-area {
+  margin: 0 auto;
+}
+
+#myChart-tools {
+  display: none !important;
+}
+
 .about .about-box {
   display: flex;
   flex-wrap: wrap;
@@ -10773,7 +10781,7 @@ a:hover {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: var(--font-weight-normal);
-  color: var(--text-color);
+  color: var(--grey600);
   word-wrap: break-word;
 }
 
@@ -10861,6 +10869,7 @@ a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  cursor: pointer;
 }
 
 .team-thumb .team-info {
@@ -11041,6 +11050,102 @@ a:hover {
 @media (min-width: 1200px) {
   .about.site-header {
     max-width: 1160px;
+  }
+}
+.brand-area {
+  position: relative;
+  margin-top: 72px;
+}
+
+.brand-area .brand-image {
+  width: 100%;
+  height: 480px;
+  background-color: #6E4797;
+  background-image: url(https://images.unsplash.com/photo-1515894203077-9cd36032142f?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: cover;
+}
+
+.brand-area .brand-name {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  padding-bottom: 24px;
+  color: var(--white-color);
+  font-size: 1.8rem;
+}
+
+.brand-area .brand-name strong {
+  font-size: 3.2rem;
+}
+
+.brand-box {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-box .logo {
+  padding: 24px 0;
+}
+
+.brand-box .brand-copy {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: var(--grey600);
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.brand-box .brand-copy .br {
+  display: none;
+}
+
+.brand-word {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-word .word-info {
+  margin-top: 1.6rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--grey400);
+}
+
+@media (min-width: 576px) {
+  .brand-area .brand-name {
+    padding-bottom: 32px;
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .team-thumb {
+    width: 20%;
+  }
+  .brand-box .brand-copy .br {
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  .brand-area .brand-name strong {
+    font-size: 4rem;
+  }
+  .brand-box {
+    margin-top: 120px;
+  }
+  .brand-box .brand-copy {
+    font-size: 2rem;
+    line-height: 2.9rem;
+  }
+  .brand-word img {
+    width: 70%;
   }
 }
 .press-box {

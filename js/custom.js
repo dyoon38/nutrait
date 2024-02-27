@@ -8,6 +8,17 @@
       $('.preloader').delay(500).slideUp('slow'); // set duration in brackets    
     });
 
+
+    // MENU ACTIVE
+    $('.nav-item a').click(function() {
+      if ( $(this).hasClass('active') ) {
+          $(this).removeClass('active')
+      }
+      else {
+          $(this).addClass('active')
+      }
+    });
+
     // NAVBAR
     $(".navbar").headroom();
 
@@ -27,5 +38,6 @@
       arrows: false,
       dots: true,
     });
+
     
   })(window.jQuery);
