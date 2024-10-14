@@ -10990,7 +10990,6 @@ h4 span {
 }
 @media (min-width: 576px) {
   .history .history-year {
-    align-items: center;
     margin-bottom: 32px;
   }
 }
@@ -11267,6 +11266,8 @@ h4 span {
   align-items: center;
 }
 .brand-box .logo {
+  width: 480px;
+  height: auto;
   padding: 24px 0;
 }
 .brand-box .brand-copy {
