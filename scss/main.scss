@@ -1,10 +1,12 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixin';
 
 @import 'vendors/bootstrap';
 @import 'vendors/slick';
 
 @import 'base/reset';
 @import 'base/base';
-@import 'base/variables';
+
 
 @import 'layout/grid';
 @import 'layout/header';
